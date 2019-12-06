@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scr/css/style.css">
+    
+    <title>Zup</title>
+</head>
+
+<body>
+
+    <div class="container-box">
+        <div class="box">
+            <form action="localhost:8080/api" method="GET">
+                <div class="box-input input-group flex-nowrap">
+                    <input type="email" id="email-input" class="email-input form-control" placeholder="E-mail" aria-label="Username"
+                        aria-describedby="addon-wrapping" >
+                </div>
+                <div class="box-input input-group flex-nowrap">
+                    <input type="text" name="CPF" maxlength="11" pattern="([0-9]{11})" id="cpf-input" class="form-control" placeholder="CPF" aria-label="Username" aria-describedby="addon-wrapping" title="DIGITE APENAS NÚMEROS DE 0 A 9 TOTALIZANDO 11 DIGITOS DO CPF." >
+                </div>
+                <div class="box-button">
+                    <button class="send-button  btn btn-primary" type="button">enviar</button>
+                </div>
+                <p>*verifique seu e-mail</p>
+            </form>
+        </div>
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="../scr/js/app.js"></script>
+
+</body>
+</html>
